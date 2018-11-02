@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-from axf.models import Wheel, Nav, Mustbuy, Shop, MainShow
+from axf.models import Wheel, Nav, Mustbuy, Shop, MainShow, Foodtypes, Goods
 
 
 def home(request):  # 首页
@@ -40,9 +40,22 @@ def home(request):  # 首页
 
     return render(request, 'home/home.html', context=data)
 
+# categoryid 分类ID
+def market(request, categoryid):    # 闪购超市
 
-def market(request):    # 闪购超市
-    return render(request, 'market/market.html')
+    # 分类信息
+    foodtypes = Foodtypes.objects.all()
+
+    # 商品信息 - 根据分类id获取对应数据
+    # goodsList = Goods.objects.all()[0:5]
+    goodsList = Goods.objects.filter(categoryid=categoryid)
+
+    data = {
+        'foodtypes':foodtypes,
+        'goodsList':goodsList
+    }
+
+    return render(request, 'market/market.html', context=data)
 
 
 def cart(request):  # 购物车
