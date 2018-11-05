@@ -8,9 +8,20 @@ $(function () {
         // 数字、字母
         var reg = /^[A-Za-z0-9]+$/
         if (reg.test($(this).val())) {  // 符合
-            $('#account i').html('')
-            $('#account').removeClass('has-error').addClass('has-success')
-            $('#account span').removeClass('glyphicon-remove').addClass('glyphicon-ok')
+            // ajax,获取账号是否可用
+            $.get('/checkaccount/', {'account':$(this).val()},function (response) {
+                console.log(response)
+                if (response.status == 1){  // 可用
+                    $('#account i').html('')
+                    $('#account').removeClass('has-error').addClass('has-success')
+                    $('#account span').removeClass('glyphicon-remove').addClass('glyphicon-ok')
+                } else {    // 不可用
+                    $('#account i').html(response.msg)
+                    $('#account').removeClass('has-success').addClass('has-error')
+                    $('#account span').removeClass('glyphicon-ok').addClass('glyphicon-remove')
+                }
+            })
+
         } else {    // 不符合
             $('#account i').html('账号由数字、字母组成')
             $('#account').removeClass('has-success').addClass('has-error')

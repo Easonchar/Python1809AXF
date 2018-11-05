@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68468c3a-ef17-46fe-9055-e7d856925437" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static/mine/css/registe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/mine/js/mine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/mine/js/registerAxf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/uploads/axf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mine/registe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mine/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mine/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mine/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python1809AXF/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python1809AXF/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axf/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/axf/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/axf/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/axf/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/market/js/market.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/market/js/market.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/mine/css/mine.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/mine/css/mine.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/mine/js/registerAxf.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/mine/js/registerAxf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mine/mine.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mine/mine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mine/registe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mine/registe.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,16 +54,16 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.53513974">
+    <splitter split-orientation="horizontal" split-proportion="0.4817951">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/axf/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+                <state relative-caret-position="508">
+                  <caret line="199" column="43" selection-start-line="199" selection-start-column="43" selection-end-line="199" selection-end-column="43" />
                   <folding>
-                    <element signature="e#0#13#0" expanded="true" />
+                    <element signature="e#0#14#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -76,8 +72,8 @@
           <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/axf/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="234">
-                  <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+                <state relative-caret-position="306">
+                  <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -85,21 +81,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="mine.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/mine/mine.html">
+          <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/mine/login.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
-                  <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#381#439#0#HTML" />
-                    <element signature="e#962#1011#0#HTML" />
-                    <element signature="e#1125#1174#0#HTML" />
-                    <element signature="e#1305#1354#0#HTML" />
-                    <element signature="e#1680#1983#0#HTML" />
-                    <element signature="e#2004#2307#0#HTML" />
-                    <element signature="e#2328#2631#0#HTML" />
-                    <element signature="e#2682#4045#0#HTML" />
-                  </folding>
+                <state relative-caret-position="382">
+                  <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -108,55 +94,56 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/axf/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="310">
-                  <caret line="123" column="7" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="7" />
+                <state relative-caret-position="202">
+                  <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="mine.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/static/mine/css/mine.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="101" column="18" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="18" />
+          <file leaf-file-name="axf_user" pinned="false" current-in-tab="false">
+            <entry file="das://a4fdc537-43e4-4f5f-a776-7f3074e6eebc/schema/main/table/axf_user">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state>
+                  <filtering enabled="true" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="registe.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/static/mine/css/registe.css">
+          <file leaf-file-name="mine.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/mine/mine.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="registerAxf.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/static/mine/js/registerAxf.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="registe.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/mine/registe.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+                <state relative-caret-position="150">
+                  <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
                   <folding>
-                    <element signature="n#div#0;n#form#0;n#div#0;n#!!top" />
-                    <element signature="n#div#1;n#form#0;n#div#0;n#!!top" />
-                    <element signature="n#div#2;n#form#0;n#div#0;n#!!top" />
-                    <element signature="n#div#3;n#form#0;n#div#0;n#!!top" />
-                    <element signature="n#div#4;n#form#0;n#div#0;n#!!top" />
-                    <element signature="n#div#5;n#form#0;n#div#0;n#!!top" />
+                    <element signature="e#1155#1321#0#HTML" />
+                    <element signature="e#1335#2698#0#HTML" />
+                    <element signature="e#2712#4066#0#HTML" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/static/mine/js/login.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+                  <folding>
+                    <element signature="e#1122#1801#0" />
+                    <element signature="e#1337#1992#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="login.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/static/mine/css/login.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="486">
+                  <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -169,8 +156,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -199,14 +186,17 @@
         <option value="$PROJECT_DIR$/static/mine/js/mine.js" />
         <option value="$PROJECT_DIR$/Python1809AXF/settings.py" />
         <option value="$PROJECT_DIR$/static/mine/css/mine.css" />
-        <option value="$PROJECT_DIR$/axf/urls.py" />
         <option value="$PROJECT_DIR$/axf/models.py" />
-        <option value="$PROJECT_DIR$/templates/mine/mine.html" />
         <option value="$PROJECT_DIR$/static/mine/js/registe.js" />
         <option value="$PROJECT_DIR$/static/mine/js/reigsterAxf.js" />
         <option value="$PROJECT_DIR$/static/mine/css/registe.css" />
         <option value="$PROJECT_DIR$/templates/mine/registe.html" />
         <option value="$PROJECT_DIR$/static/mine/js/registerAxf.js" />
+        <option value="$PROJECT_DIR$/axf/urls.py" />
+        <option value="$PROJECT_DIR$/templates/mine/mine.html" />
+        <option value="$PROJECT_DIR$/static/mine/js/login.js" />
+        <option value="$PROJECT_DIR$/static/mine/css/login.css" />
+        <option value="$PROJECT_DIR$/templates/mine/login.html" />
         <option value="$PROJECT_DIR$/axf/views.py" />
       </list>
     </option>
@@ -247,7 +237,21 @@
               <item name="Python1809AXF" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python1809AXF" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python1809AXF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python1809AXF" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python1809AXF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python1809AXF" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Python1809AXF" type="b2602c69:ProjectViewProjectNode" />
@@ -343,8 +347,9 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28614008" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18882303" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23845008" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32488823" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.1583404" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.2641829" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32935917" />
@@ -358,7 +363,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32488823" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,55 +372,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/base/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/base/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/axf/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/base/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/base/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -606,18 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/MyWord.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-column="25" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/market/market.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -651,16 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/axf/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/mine/js/mine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -668,34 +601,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/mine/css/mine.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="101" column="18" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/mine/js/registe.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/mine/css/registe.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+    <entry file="file://$PROJECT_DIR$/doc/MyWord.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-column="25" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/mine/js/registerAxf.js">
+    <entry file="file://$PROJECT_DIR$/static/uploads/123.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/uploads/axf.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/uploads/123123qads.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/python1809/lib/python3.5/hashlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="108">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/axf/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/mine/registe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+        <state relative-caret-position="216">
+          <caret line="22" column="28" lean-forward="true" selection-end-line="95" />
           <folding>
             <element signature="n#div#0;n#form#0;n#div#0;n#!!top" />
             <element signature="n#div#1;n#form#0;n#div#0;n#!!top" />
@@ -707,10 +657,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/mine/css/registe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mine/css/mine.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mine/mine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <element signature="e#1155#1321#0#HTML" />
+            <element signature="e#1335#2698#0#HTML" />
+            <element signature="e#2712#4066#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mine/js/registerAxf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="48" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mine/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#1122#1801#0" />
+            <element signature="e#1337#1992#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/axf/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="123" column="7" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="7" />
+        <state relative-caret-position="202">
+          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -721,29 +715,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mine/mine.html">
+    <entry file="file://$PROJECT_DIR$/static/mine/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#381#439#0#HTML" />
-            <element signature="e#962#1011#0#HTML" />
-            <element signature="e#1125#1174#0#HTML" />
-            <element signature="e#1305#1354#0#HTML" />
-            <element signature="e#1680#1983#0#HTML" />
-            <element signature="e#2004#2307#0#HTML" />
-            <element signature="e#2328#2631#0#HTML" />
-            <element signature="e#2682#4045#0#HTML" />
-          </folding>
+        <state relative-caret-position="486">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mine/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/axf/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="508">
+          <caret line="199" column="43" selection-start-line="199" selection-start-column="43" selection-end-line="199" selection-end-column="43" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

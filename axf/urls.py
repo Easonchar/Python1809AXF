@@ -11,4 +11,7 @@ urlpatterns = [
 
 
     url(r'^registe/$', views.registe, name='registe'),  # 注册
+    url(r'^checkaccount/$', views.checkaccount, name='checkaccount'), # 账号验证
+    url(r'^logout/$', views.logout, name='logout'), # 退出
+    url(r'^login/$', views.login, name='login'),    # 登录
 ]
