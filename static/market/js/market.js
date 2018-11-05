@@ -40,14 +40,6 @@ $(function () {
         categoryBt = !categoryBt
 
         categoryBt ? categoryViewShow() : categoryViewHide()
-
-        // if (categoryBt){    // 显示
-        //     $('.bounce-view.category-view').show()
-        //     $('#categoryBt i').removeClass('glyphicon-triangle-top').addClass('glyphicon-triangle-bottom')
-        // } else {    // 隐藏
-        //     $('.bounce-view.category-view').hide()
-        //     $('#categoryBt i').removeClass('glyphicon-triangle-bottom').addClass('glyphicon-triangle-top')
-        // }
     })
 
 
