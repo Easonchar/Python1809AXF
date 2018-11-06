@@ -8,7 +8,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from Python1809AXF import settings
-from axf.models import Wheel, Nav, Mustbuy, Shop, MainShow, Foodtypes, Goods, User
+from axf.models import Wheel, Nav, Mustbuy, Shop, MainShow, Foodtypes, Goods, User, Cart
 
 
 def home(request):  # 首页
@@ -84,12 +84,21 @@ def market(request, categoryid, childid, sortid):    # 闪购超市
     elif sortid == '3': # 价格最高
         goodsList = goodsList.order_by(('-price'))
 
+
+    # 购物车数据
+    token = request.session.get('token')
+    carts = []
+    if token:   # 根据用户，获取对应用户下所有购物车数据
+        user = User.objects.get(token=token)
+        carts = Cart.objects.filter(user=user)
+
     data = {
         'foodtypes':foodtypes,  # 分类信息
         'goodsList':goodsList,  # 商品信息
         'childTypleList': childTypleList,   # 子类信息
         'categoryid':categoryid,    # 分类ID
         'childid': childid,     # 子类ID
+        'carts':carts
     }
 
     return render(request, 'market/market.html', context=data)
@@ -202,3 +211,49 @@ def login(request):
                 return render(request, 'mine/login.html', context={'passwdErr': '密码错误!'})
         except:
             return render(request, 'mine/login.html', context={'acountErr':'账号不存在!'})
+
+
+def addcart(request):
+    goodsid = request.GET.get('goodsid')
+    token = request.session.get('token')
+
+    responseData = {
+        'msg':'添加购物车成功',
+        'status': 1 # 1标识添加成功，0标识添加失败，-1标识未登录
+    }
+
+    if token:   # 登录 [直接操作模型]
+        # 获取用户
+        user = User.objects.get(token=token)
+        # 获取商品
+        goods = Goods.objects.get(pk=goodsid)
+
+
+        # 商品已经在购物车，只修改商品个数
+        # 商品不存在购物车，新建对象（加入一条新的数据）
+        carts = Cart.objects.filter(user=user).filter(goods=goods)
+        if carts.exists():  # 修改数量
+            cart = carts.first()
+            cart.number = cart.number + 1
+            cart.save()
+            responseData['number'] = cart.number
+        else:   # 添加一条新记录
+            cart = Cart()
+            cart.user = user
+            cart.goods = goods
+            cart.number = 1
+            cart.save()
+
+            responseData['number'] = cart.number
+
+        return JsonResponse(responseData)
+    else:   # 未登录 [跳转到登录页面]
+        # 由于addcart这个是 用于 ajax操作， 所以这里是不能进行重定向!!
+        # return redirect('axf:login')
+        responseData['msg'] = '未登录，请登录后操作'
+        responseData['status'] = -1
+        return JsonResponse(responseData)
+
+
+def subcart(request):
+    return JsonResponse('购物车减操作成功')
