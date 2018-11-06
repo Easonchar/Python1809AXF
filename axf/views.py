@@ -105,7 +105,16 @@ def market(request, categoryid, childid, sortid):    # 闪购超市
 
 
 def cart(request):  # 购物车
-    return render(request, 'cart/cart.html')
+    token = request.session.get('token')
+    if token:   # 显示该用户下 购物车信息
+        user = User.objects.get(token=token)
+        carts = Cart.objects.filter(user=user).exclude(number=0)
+
+        return render(request, 'cart/cart.html', context={'carts':carts})
+    else:       # 跳转到登录页面
+        return redirect('axf:login')
+
+
 
 
 def mine(request):  # 我的
@@ -256,4 +265,23 @@ def addcart(request):
 
 
 def subcart(request):
-    return JsonResponse('购物车减操作成功')
+    # 获取数据
+    token = request.session.get('token')
+    goodsid = request.GET.get('goodsid')
+
+    # 对应用户 和 商品
+    user = User.objects.get(token=token)
+    goods = Goods.objects.get(pk=goodsid)
+
+    # 删减操作
+    cart = Cart.objects.filter(user=user).filter(goods=goods).first()
+    cart.number = cart.number - 1
+    cart.save()
+
+    responseData = {
+        'msg': '购物车减操作成功',
+        'status': 1,
+        'number': cart.number
+    }
+
+    return JsonResponse(responseData)
